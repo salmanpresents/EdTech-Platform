@@ -1,0 +1,366 @@
+/* General Styles */
+:root {
+    --primary-color: #5e4dcd;
+    --primary-light: #ece9ff;
+    --secondary-color: #ff6b6b;
+    --text-color: #333;
+    --text-light: #777;
+    --bg-color: #f8f9fa;
+    --white: #ffffff;
+    --blue-accent: #3b82f6;
+    --purple-accent: #8b5cf6;
+    --orange-accent: #f59e0b;
+    --border-radius: 8px;
+    --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 15px;
+}
+
+.signup-container {
+    display: flex;
+    background-color: var(--white);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
+
+/* Left Panel Styles */
+.left-panel {
+    flex: 1;
+    background-color: var(--primary-light);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.illustration {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.illustration img {
+    max-width: 100%;
+    height: auto;
+}
+
+.welcome-text {
+    margin-bottom: 30px;
+}
+
+.welcome-text h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.welcome-text p {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.highlight {
+    color: var(--primary-color);
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.stat-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.stat-icon.blue {
+    background-color: var(--blue-accent);
+}
+
+.stat-icon.orange {
+    background-color: var(--orange-accent);
+}
+
+.stat-icon.purple {
+    background-color: var(--purple-accent);
+}
+
+.stat-info h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.stat-info p {
+    font-size: 12px;
+    color: var(--text-light);
+}
+
+/* Right Panel Styles */
+.right-panel {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form-header h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.form-header p {
+    color: var(--text-light);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-group i {
+    position: absolute;
+    left: 15px;
+    color: var(--text-light);
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(94, 77, 205, 0.1);
+}
+
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    color: var(--text-light);
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.form-checkbox input {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--primary-color);
+}
+
+.form-checkbox label {
+    font-size: 14px;
+    color: var(--text-light);
+}
+
+.signup-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.signup-btn:hover {
+    background-color: #4c3db9;
+}
+
+.or-divider {
+    text-align: center;
+    position: relative;
+    margin: 25px 0;
+}
+
+.or-divider::before, .or-divider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.or-divider::before {
+    left: 0;
+}
+
+.or-divider::after {
+    right: 0;
+}
+
+.or-divider span {
+    display: inline-block;
+    padding: 0 10px;
+    background-color: white;
+    position: relative;
+    color: var(--text-light);
+    font-size: 14px;
+}
+
+.social-login {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.social-btn:hover {
+    background-color: #f5f5f5;
+}
+
+.social-btn.google i {
+    color: #DB4437;
+}
+
+.social-btn.facebook i {
+    color: #4267B2;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: var(--text-light);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .signup-container {
+        flex-direction: column;
+    }
+    
+    .left-panel {
+        padding: 30px;
+    }
+    
+    .right-panel {
+        padding: 30px;
+    }
+    
+    .welcome-text h1 {
+        font-size: 24px;
+    }
+    
+    .stats-container {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .stat {
+        flex: 1;
+        min-width: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .left-panel {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-login {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EdTech Platform - Sign Up</title>
+    <link rel="stylesheet" href="./EdTech-Platform/EdTech Platform/Css/signup.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="signup-container">
+            <div class="left-panel">
+                <div class="logo-container">
+                    <div class="logo">EdTech Platform</div>
+                </div>
+                <div class="illustration">
+                    <img src="/api/placeholder/450/450" alt="Education Illustration">
+                </div>
+                <div class="welcome-text">
+                    <h1>Getting <span class="highlight">Quality</span> Education Is Now More <span class="highlight">Easy</span></h1>
+                    <p>Provides you with the latest online learning courses and material that help you knowledge growing.</p>
+                </div>
+                <div class="stats-container">
+                    <div class="stat">
+                        <div class="stat-icon blue">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>10k+</h3>
+                            <p>TOTAL COURSES</p>
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-icon orange">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>500+</h3>
+                            <p>EXPERT MENTORS</p>
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-icon purple">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>300k+</h3>
+                            <p>STUDENTS GLOBALLY</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-panel">
+                <div class="form-header">
+                    <h2>Create Your Account</h2>
+                    <p>Join our community of learners today!</p>
+                </div>
+                <form id="signup-form">
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <div class="input-group">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <div class="input-group">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <div class="input-group">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="password" name="password" placeholder="Create a password" required>
+                            <i class="fas fa-eye toggle-password" id="toggle-password"></i>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <div class="input-group">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+                            <i class="fas fa-eye toggle-password" id="toggle-confirm-password"></i>
+                        </div>
+                    </div>
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I agree to EdTech's <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                    </div>
+                    <button type="submit" class="signup-btn">Sign Up</button>
+                    <div class="or-divider">
+                        <span>or sign up with</span>
+                    </div>
+                    <div class="social-login">
+                        <button type="button" class="social-btn google">
+                            <i class="fab fa-google"></i>
+                            <span>Google</span>
+                        </button>
+                        <button type="button" class="social-btn facebook">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>Facebook</span>
+                        </button>
+                    </div>
+                    <div class="login-link">
+                        <p>Already have an account? <a href="#">Log In</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./EdTech-Platform/EdTech Platform/JS/signup.js"></script>
+</body>
+</html>
